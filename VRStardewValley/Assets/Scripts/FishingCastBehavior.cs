@@ -3,36 +3,45 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
+// This script allows the player to fish.
 public class FishingCastBehavior : OVRGrabber
 {
     private bool FishBiteBool = false; 
     private bool FishingBool = false;
-    private int FishCount = 0;
     public TextMeshProUGUI FishBiteExclamation;
-    public TextMeshProUGUI FishCountText;
+    public Animator RodAnim;
     public Animator FishAnim;
     public GameObject Player;
 
     // Update is called once per frame
     new void Update()
     {
+        // if they aren't already fishing
         if (FishingBool == false)
         {
+            // and if they are grabbing the rod and press the A button
             if (m_grabbedObj != null && OVRInput.Get(OVRInput.RawButton.A) == true)
             {
+                // say that they are fishing now
                 FishingBool = true;
 
                 //disable the movement scripts attached to the player, so that they can't teleport or walk away
                 StopMovement();
 
-                //cause fish to bite
-                FishBite();
+                //start casting animation
+                RodAnim.Play("Cast");
             }
         }
+    }
 
-        //changes the ui to the amount of fish caught
-        FishCountText.text = "Fish: " + FishCount;
-        
+    private void OnTriggerEnter(Collider other)
+    {
+        //if the collided object is water
+        if (other.CompareTag("Water"))
+        {
+            //allow them to catch fish
+            FishBite();
+        }
     }
 
     void StopMovement()
@@ -61,14 +70,12 @@ public class FishingCastBehavior : OVRGrabber
             //make a ui exclamation mark pop up
             FishBiteExclamation.enabled = true;
 
-            //then if they press A again
-            if (OVRInput.Get(OVRInput.RawButton.A) == true)
+            //then if they press A again and the cast animation is being played
+            if (OVRInput.Get(OVRInput.RawButton.A) == true && RodAnim.GetCurrentAnimatorStateInfo(0).IsName("Cast"))
             {
-                //begin the fish catching animation
-                FishAnim.SetTrigger("Play");
-
-                //increase the fish count by 1
-                FishCount++;
+                //begin the fish catching and reel in animations
+                RodAnim.Play("ReelIn");
+                FishAnim.Play("Caught");
 
                 //give the player back their movement
                 StartMovement();
@@ -79,5 +86,11 @@ public class FishingCastBehavior : OVRGrabber
                 FishBiteBool = true;
             }
         }
+    }
+
+    protected void ResetBools()
+    {
+        FishBiteBool = false;
+        FishingBool = false;
     }
 }
