@@ -10,13 +10,14 @@ public class DepositFishBehavior : FishingCastBehavior
     public TextMeshProUGUI FishCountText;
     private int FishCount = 0;
 
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter(Collider other)
     {
         //if the object that collided has the tag Fish
-        if (other.CompareTag("Fish"))
+        if (other.transform.tag == "Fish")
         {
             //reset the fish animation back to normal
             FishAnim.Play("Idle");
+            RodAnim.Play("Idle");
 
             //reset the bools by calling the method from the parent class
             ResetBools();

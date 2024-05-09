@@ -6,17 +6,23 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/StartScene.unity
-    guid: dfd274c8ed6a63840b5f1a59739fe40d
+    path: Assets/Scenes/CaveScene.unity
+    guid: 117fd0fe1401a1148a97cb9de246ad0a
   - enabled: 1
+    path: Assets/Scenes/FishingScene.unity
+    guid: 07973c1ff12200b46ae04ff445142e91
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
     path: Assets/Scenes/UsefulStuffFromZenGarden.unity
     guid: 9206468a2971ff14e9356f5b9c6aa2d7
-  - enabled: 1
-    path: Assets/Scenes/EndScene.unity
-    guid: 57eab90efa115e74da15dd246ddfb606
   - enabled: 0
-    path: Assets/Scenes/TeleportScene.unity
-    guid: 377780214093f624bac96b50c377651a
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000

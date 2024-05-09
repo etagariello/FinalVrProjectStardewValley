@@ -9,24 +9,27 @@ public class FishingCastBehavior : OVRGrabber
     private bool FishBiteBool = false; 
     private bool FishingBool = false;
     public TextMeshProUGUI FishBiteExclamation;
+    public TextMeshProUGUI ArrowText;
     public Animator RodAnim;
     public Animator FishAnim;
     public GameObject Player;
 
-    // Update is called once per frame
     new void Update()
     {
+        GrabBegin();
+    }
+    protected override void GrabBegin()
+    {
+        base.GrabBegin(); // Call the base class implementation first
+
         // if they aren't already fishing
         if (FishingBool == false)
         {
             // and if they are grabbing the rod and press the A button
-            if (m_grabbedObj != null && OVRInput.Get(OVRInput.RawButton.A) == true)
+            if (OVRInput.Get(OVRInput.RawButton.A) == true)
             {
                 // say that they are fishing now
                 FishingBool = true;
-
-                //disable the movement scripts attached to the player, so that they can't teleport or walk away
-                StopMovement();
 
                 //start casting animation
                 RodAnim.Play("Cast");
@@ -34,36 +37,16 @@ public class FishingCastBehavior : OVRGrabber
         }
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter(Collision other)
     {
-        //if the collided object is water
-        if (other.CompareTag("Water"))
+        if (other.transform.tag == "Water")
         {
-            //allow them to catch fish
             FishBite();
+            Debug.Log("calledfishbite");
         }
     }
 
-    void StopMovement()
-    {
-        //disable all of the movement script components
-        Player.GetComponent<CharacterCameraConstraint>().enabled = false;
-        Player.GetComponent<SimpleCapsuleWithStickMovement>().enabled = false;
-        Player.GetComponentInChildren<LocomotionController>().enabled = false;
-        Player.GetComponentInChildren<LocomotionTeleport>().enabled = false;
-        Player.GetComponentInChildren<TeleportInputHandler>().enabled = false;
-    }
-
-    void StartMovement()
-    {
-        //enable all of the movement script components
-        Player.GetComponent<SimpleCapsuleWithStickMovement>().enabled = true;
-        Player.GetComponentInChildren<LocomotionController>().enabled = true;
-        Player.GetComponentInChildren<LocomotionTeleport>().enabled = true;
-        Player.GetComponentInChildren<TeleportInputHandler>().enabled = true;
-    }
-
-    void FishBite()
+    protected void FishBite()
     {
         while (FishBiteBool == false)
         {
@@ -71,14 +54,11 @@ public class FishingCastBehavior : OVRGrabber
             FishBiteExclamation.enabled = true;
 
             //then if they press A again and the cast animation is being played
-            if (OVRInput.Get(OVRInput.RawButton.A) == true && RodAnim.GetCurrentAnimatorStateInfo(0).IsName("Cast"))
+            if (OVRInput.Get(OVRInput.RawButton.A) == true) //&& RodAnim.GetCurrentAnimatorStateInfo(0).IsName("Cast"))
             {
                 //begin the fish catching and reel in animations
                 RodAnim.Play("ReelIn");
-                FishAnim.Play("Caught");
-
-                //give the player back their movement
-                StartMovement();
+                FishAnim.Play("FishCaught");
 
                 //remove the exclamation mark
                 FishBiteExclamation.enabled = false;
