@@ -10,7 +10,7 @@ public class DepositFishBehavior : FishingCastBehavior
     public TextMeshProUGUI FishCountText;
     private int FishCount = 0;
 
-    private void OnCollisionEnter(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
         //if the object that collided has the tag Fish
         if (other.transform.tag == "Fish")

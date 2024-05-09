@@ -45,17 +45,27 @@ public class EnemyBehavior : MonoBehaviour
         agent.destination = locations[locationIndex].position;
         locationIndex = (locationIndex + 1) % locations.Count;
     }
+
     void OnTriggerEnter(Collider other)
     {
-        if (other.name == "Player")
+        if (other.name == "PlayerController")
         {
             agent.destination = player.position;
-            PlayerHealth--;
             
-            if(PlayerHealth <= 0)
+        }
+    }
+
+    void OnCollisionEnter(Collision other)
+    {
+        if (other.transform.name == "PlayerController")
+        {
+            PlayerHealth--;
+
+            if (PlayerHealth <= 0)
             {
                 Application.Quit();
             }
         }
+            
     }
 }
