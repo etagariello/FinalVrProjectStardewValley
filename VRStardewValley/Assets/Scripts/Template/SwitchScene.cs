@@ -21,4 +21,9 @@ public class SwitchScene : MonoBehaviour
         index = (index + 1) % SceneManager.sceneCountInBuildSettings;
         LoadScene(index);
     }
+
+    public void ExitGame()
+    {
+        Application.Quit();
+    }
 }
