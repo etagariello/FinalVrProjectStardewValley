@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.06988291, g: 0.05648956, b: 0.080420285, a: 1}
+  m_IndirectSpecularColor: {r: 0.105669074, g: 0.08542201, b: 0.1215564, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -285,7 +285,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 216465aed048d854e995035e6bfa68b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Plants: {fileID: 834778552}
+  targetTag: CarrotPlant
+  plant: {fileID: 992031901}
+  ghostPlant: {fileID: 14616467}
 --- !u!135 &14616469
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -934,6 +936,10 @@ PrefabInstance:
     - target: {fileID: 1000010164499024, guid: f0666abddd74e5644ac4cf977d74e5e9, type: 3}
       propertyPath: m_Name
       value: Turnip_Plant (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010164499024, guid: f0666abddd74e5644ac4cf977d74e5e9, type: 3}
+      propertyPath: m_TagString
+      value: TurnipPlant
       objectReference: {fileID: 0}
     - target: {fileID: 4000011416873294, guid: f0666abddd74e5644ac4cf977d74e5e9, type: 3}
       propertyPath: m_RootOrder
@@ -1588,6 +1594,10 @@ PrefabInstance:
     - target: {fileID: 1000010164499024, guid: f0666abddd74e5644ac4cf977d74e5e9, type: 3}
       propertyPath: m_Name
       value: Turnip_Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010164499024, guid: f0666abddd74e5644ac4cf977d74e5e9, type: 3}
+      propertyPath: m_TagString
+      value: TurnipPlant
       objectReference: {fileID: 0}
     - target: {fileID: 4000011416873294, guid: f0666abddd74e5644ac4cf977d74e5e9, type: 3}
       propertyPath: m_RootOrder
@@ -3488,7 +3498,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 216465aed048d854e995035e6bfa68b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Plants: {fileID: 1211867282}
+  targetTag: TurnipPlant
+  plant: {fileID: 108410603}
+  ghostPlant: {fileID: 467824159}
 --- !u!135 &467824161
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3910,7 +3922,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 216465aed048d854e995035e6bfa68b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Plants: {fileID: 1261652489}
+  targetTag: TomatoPlant
+  plant: {fileID: 2102716544}
+  ghostPlant: {fileID: 555697238}
 --- !u!135 &555697240
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4643,7 +4657,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 216465aed048d854e995035e6bfa68b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Plants: {fileID: 1261652489}
+  targetTag: TomatoPlant
+  plant: {fileID: 1040336392}
+  ghostPlant: {fileID: 680513431}
 --- !u!135 &680513433
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -6268,170 +6284,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 35.609, z: 0}
---- !u!43 &908461033
-Mesh:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  serializedVersion: 10
-  m_SubMeshes:
-  - serializedVersion: 2
-    firstByte: 0
-    indexCount: 12
-    topology: 0
-    baseVertex: 0
-    firstVertex: 0
-    vertexCount: 2
-    localAABB:
-      m_Center: {x: 0, y: 0, z: 0}
-      m_Extent: {x: 0, y: 1, z: 0}
-  m_Shapes:
-    vertices: []
-    shapes: []
-    channels: []
-    fullWeights: []
-  m_BindPose: []
-  m_BoneNameHashes: 
-  m_RootBoneNameHash: 0
-  m_BonesAABB: []
-  m_VariableBoneCountWeights:
-    m_Data: 
-  m_MeshCompression: 0
-  m_IsReadable: 1
-  m_KeepVertices: 1
-  m_KeepIndices: 1
-  m_IndexFormat: 0
-  m_IndexBuffer: 000000000100000000000100010000000100010001000000
-  m_VertexData:
-    serializedVersion: 3
-    m_VertexCount: 2
-    m_Channels:
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 3
-    - stream: 0
-      offset: 12
-      format: 0
-      dimension: 3
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    m_DataSize: 48
-    _typelessdata: 000000000000803f0000000000000000000000000000000000000000000080bf00000000000000000000000000000000
-  m_CompressedMesh:
-    m_Vertices:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UV:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Normals:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Tangents:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Weights:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_NormalSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_TangentSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_FloatColors:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_BoneIndices:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Triangles:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UVInfo: 0
-  m_LocalAABB:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 0, y: 1, z: 0}
-  m_MeshUsageFlags: 0
-  m_BakedConvexCollisionMesh: 
-  m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 1
-  m_MeshOptimizationFlags: 1
-  m_StreamData:
-    serializedVersion: 2
-    offset: 0
-    size: 0
-    path: 
 --- !u!1 &910187820
 GameObject:
   m_ObjectHideFlags: 0
@@ -7050,6 +6902,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4926590347282153460, guid: 522b89d0f09cc834db5f015f40e578f3, type: 3}
+      propertyPath: m_parentHeldObject
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4926590347753639970, guid: 522b89d0f09cc834db5f015f40e578f3, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.168
@@ -7137,7 +6993,7 @@ PrefabInstance:
     - target: {fileID: 4926590347959035538, guid: 522b89d0f09cc834db5f015f40e578f3, type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 908461033}
+      objectReference: {fileID: 1956744814}
     - target: {fileID: 4926590348205885345, guid: 522b89d0f09cc834db5f015f40e578f3, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -7244,6 +7100,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4926590348208596730, guid: 522b89d0f09cc834db5f015f40e578f3, type: 3}
       propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4926590349014859441, guid: 522b89d0f09cc834db5f015f40e578f3, type: 3}
+      propertyPath: m_parentHeldObject
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
@@ -7801,6 +7661,10 @@ PrefabInstance:
     - target: {fileID: 1000013410243764, guid: 56b36da289d9a9e4cb37c5f588e23748, type: 3}
       propertyPath: m_Name
       value: Carrot_Plant (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013410243764, guid: 56b36da289d9a9e4cb37c5f588e23748, type: 3}
+      propertyPath: m_TagString
+      value: CarrotPlant
       objectReference: {fileID: 0}
     - target: {fileID: 4000010095355520, guid: 56b36da289d9a9e4cb37c5f588e23748, type: 3}
       propertyPath: m_RootOrder
@@ -8397,7 +8261,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 216465aed048d854e995035e6bfa68b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Plants: {fileID: 834778552}
+  targetTag: CarrotPlant
+  plant: {fileID: 1695636924}
+  ghostPlant: {fileID: 1030266177}
 --- !u!135 &1030266179
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -8514,6 +8380,10 @@ PrefabInstance:
     - target: {fileID: 1000013832410636, guid: 323e5d46aea633c42bfadb66b36971d8, type: 3}
       propertyPath: m_Name
       value: Tomato_Plant (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013832410636, guid: 323e5d46aea633c42bfadb66b36971d8, type: 3}
+      propertyPath: m_TagString
+      value: TomatoPlant
       objectReference: {fileID: 0}
     - target: {fileID: 4000013634387022, guid: 323e5d46aea633c42bfadb66b36971d8, type: 3}
       propertyPath: m_RootOrder
@@ -8793,7 +8663,7 @@ PrefabInstance:
     - target: {fileID: 23910425258058988, guid: 97b10c95ce8e2d64f9cebc43b086df00, type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2100000, guid: b50180c74ecdfa845bbe969c5b1a453a, type: 2}
     - target: {fileID: 65109575051569944, guid: 97b10c95ce8e2d64f9cebc43b086df00, type: 3}
       propertyPath: m_Size.x
       value: 0.0066897194
@@ -11162,7 +11032,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 216465aed048d854e995035e6bfa68b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Plants: {fileID: 1261652489}
+  targetTag: TomatoPlant
+  plant: {fileID: 2136311908}
+  ghostPlant: {fileID: 1429623946}
 --- !u!135 &1429623948
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -11747,6 +11619,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Carrot_Plant (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013410243764, guid: 56b36da289d9a9e4cb37c5f588e23748, type: 3}
+      propertyPath: m_TagString
+      value: CarrotPlant
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010095355520, guid: 56b36da289d9a9e4cb37c5f588e23748, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -11985,7 +11861,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 216465aed048d854e995035e6bfa68b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Plants: {fileID: 834778552}
+  targetTag: CarrotPlant
+  plant: {fileID: 1475662242}
+  ghostPlant: {fileID: 1485611581}
 --- !u!135 &1485611583
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -14001,7 +13879,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 216465aed048d854e995035e6bfa68b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Plants: {fileID: 1211867282}
+  targetTag: TurnipPlant
+  plant: {fileID: 1726232691}
+  ghostPlant: {fileID: 1637476522}
 --- !u!135 &1637476524
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -14613,6 +14493,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Carrot_Plant (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013410243764, guid: 56b36da289d9a9e4cb37c5f588e23748, type: 3}
+      propertyPath: m_TagString
+      value: CarrotPlant
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010095355520, guid: 56b36da289d9a9e4cb37c5f588e23748, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -14852,6 +14736,10 @@ PrefabInstance:
     - target: {fileID: 1000010164499024, guid: f0666abddd74e5644ac4cf977d74e5e9, type: 3}
       propertyPath: m_Name
       value: Turnip_Plant (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010164499024, guid: f0666abddd74e5644ac4cf977d74e5e9, type: 3}
+      propertyPath: m_TagString
+      value: TurnipPlant
       objectReference: {fileID: 0}
     - target: {fileID: 4000011416873294, guid: f0666abddd74e5644ac4cf977d74e5e9, type: 3}
       propertyPath: m_RootOrder
@@ -17002,6 +16890,170 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetTag: Rock
+--- !u!43 &1956744814
+Mesh:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  serializedVersion: 10
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 12
+    topology: 0
+    baseVertex: 0
+    firstVertex: 0
+    vertexCount: 2
+    localAABB:
+      m_Center: {x: 0, y: 0, z: 0}
+      m_Extent: {x: 0, y: 1, z: 0}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_BonesAABB: []
+  m_VariableBoneCountWeights:
+    m_Data: 
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexFormat: 0
+  m_IndexBuffer: 000000000100000000000100010000000100010001000000
+  m_VertexData:
+    serializedVersion: 3
+    m_VertexCount: 2
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 12
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 48
+    _typelessdata: 000000000000803f0000000000000000000000000000000000000000000080bf00000000000000000000000000000000
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 1, z: 0}
+  m_MeshUsageFlags: 0
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  m_MeshMetrics[0]: 1
+  m_MeshMetrics[1]: 1
+  m_MeshOptimizationFlags: 1
+  m_StreamData:
+    serializedVersion: 2
+    offset: 0
+    size: 0
+    path: 
 --- !u!1001 &1966522005
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17280,7 +17332,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 216465aed048d854e995035e6bfa68b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Plants: {fileID: 1211867282}
+  targetTag: TurnipPlant
+  plant: {fileID: 205786280}
+  ghostPlant: {fileID: 1981694375}
 --- !u!135 &1981694377
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -18173,6 +18227,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tomato_Plant (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013832410636, guid: 323e5d46aea633c42bfadb66b36971d8, type: 3}
+      propertyPath: m_TagString
+      value: TomatoPlant
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013634387022, guid: 323e5d46aea633c42bfadb66b36971d8, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -18370,6 +18428,10 @@ PrefabInstance:
     - target: {fileID: 1000013832410636, guid: 323e5d46aea633c42bfadb66b36971d8, type: 3}
       propertyPath: m_Name
       value: Tomato_Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013832410636, guid: 323e5d46aea633c42bfadb66b36971d8, type: 3}
+      propertyPath: m_TagString
+      value: TomatoPlant
       objectReference: {fileID: 0}
     - target: {fileID: 4000013634387022, guid: 323e5d46aea633c42bfadb66b36971d8, type: 3}
       propertyPath: m_RootOrder

@@ -5,6 +5,20 @@ TagManager:
   serializedVersion: 2
   tags:
   - Cat
+  - FxTemporaire
+  - Dirt
+  - Rock
+  - Grass
+  - Scythe
+  - Tree
+  - Cow
+  - Axe
+  - Hoe
+  - Pickaxe
+  - WateringCan
+  - CarrotPlant
+  - TomatoPlant
+  - TurnipPlant
   layers:
   - Default
   - TransparentFX

@@ -11,82 +11,52 @@ using TMPro;
 
 public class PlantingScript : MonoBehaviour
 {
-    public GameObject Plants;
-    private GameObject GhostPlants;
+    // target tag
+    public string targetTag;
+    // plant gameobject
+    public GameObject plant;
+    // ghost plant gameobject
+    public GameObject ghostPlant;
+    // plant position    
+    private Transform plantPosition;
+    // ghost plant position
+    private Transform ghostPlantPosition;
+    // plant rigidbodie    
+    private Rigidbody plantRigidbody;
+    // plant grabbable script    
+    private OVRGrabbable plantGrabbable;
     
-    // plant game objects
-    private GameObject ThePlant;
-
-    // ghost plant game objects
-    private GameObject TheGhostPlant;
-    
-    // plant positions
-    private Transform ThePlantPosition;
-    
-    // ghost plant positions
-    private Transform TheGhostPlantPosition;
-
-    // plant rigidbodies
-    private Rigidbody ThePlantRigidbody;
-
-    // plant grabbable scripts
-    private OVRGrabbable ThePlantGrabbable;
-
-    private void Start()
-    {
-        
-        // assign values
-
-        GhostPlants = gameObject;
-
-        // plant game objects
-        ThePlant = Plants.transform.GetChild(0).gameObject;
-
-        // ghost plant game objects
-        TheGhostPlant = GhostPlants.transform.GetChild(0).gameObject;
-
-        // plant positions
-        ThePlantPosition = ThePlant.transform;
-
-        // ghost plant positions
-        TheGhostPlantPosition = TheGhostPlant.transform;
-
-        // plant rigidbodies
-        ThePlantRigidbody = ThePlant.GetComponent<Rigidbody>();
-
-        // plant grabbable scripts
-        ThePlantGrabbable = ThePlant.GetComponent<OVRGrabbable>();
-    }
-
-    void OnCollisionEnter(Collision collision)
-    {
-        GameObject[] plants = {ThePlant};
-        GameObject[] PlantGhosts = {TheGhostPlant};
-        Transform[] PlantPositions = {ThePlantPosition};
-        Transform[] GhostPlantPositions = {TheGhostPlantPosition};
-        OVRGrabbable[] PlantGrabbables = {ThePlantGrabbable};
-        Rigidbody[] PlantRigidbodies = {ThePlantRigidbody};
-
-        if (collision.gameObject == plants[0]) {
-
-            PlantPlacement(plants[0], PlantGhosts[0], PlantPositions[0], GhostPlantPositions[0], PlantGrabbables[0], PlantRigidbodies[0]);
+    private void Start() { 
+        // plant positions        
+        plantPosition = plant.transform;
+        // ghost plant positions        
+        ghostPlantPosition = ghostPlant.transform;
+        // plant rigidbodies        
+        plantRigidbody = plant.GetComponent<Rigidbody>();
+        // plant grabbable scripts        
+        plantGrabbable = plant.GetComponent<OVRGrabbable>(); 
         }
-    }
     
-
-    // this method is to move the plant where the ghost one was when called, and destroy what causes the plant to be moveable
-    void PlantPlacement(GameObject Plants, GameObject GhostPlants, Transform PlantPosition, Transform GhostPlantPosition, OVRGrabbable PlantGrabbable, Rigidbody PlantRigidbody)
+    private void OnCollisionEnter(Collision collision)
     {
-        // deactivates ghost rock so that rock is visible
-        GhostPlants.SetActive(false);
+        Debug.Log("Collided with " + collision.gameObject.name);
+        // Check if the collision is with the correct tagged object: Carrot, Tomato, or Turnip assigned/dragged in inspector
+        if (collision.gameObject.CompareTag(targetTag))
+        {
+            Debug.Log("Correct object tagged as: " + targetTag);
+            ghostPlant.SetActive(false);
 
-        // destroy the rigidbody so it no longer can move
-        Destroy(PlantRigidbody);
+            // destroy the rigidbody so it no longer can move
+            Destroy(plantRigidbody);
 
-        // destroy the grabbable script so that it can no longer be grabbed once placed
-        Destroy(PlantGrabbable);
+            // destroy the grabbable script so that it can no longer be grabbed once placed
+            Destroy(plantGrabbable);
 
-        // moves the rock that collided to the location of the ghost rock
-        PlantPosition.position = GhostPlantPosition.position;
+            // moves the plant that collided to the location of the ghost plant
+            plantPosition.position = ghostPlantPosition.position;
+        }
+        else {
+        Debug.Log("Incorrect object tagged as: " + collision.gameObject.tag);
+        }
     }
 }
