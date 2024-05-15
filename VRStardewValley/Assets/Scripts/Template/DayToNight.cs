@@ -23,7 +23,7 @@ namespace _Scripts {
 
             // Adjust rotation of the skybox slowly using timeScale and exposure of skybox to represent from night to day
             skybox.SetFloat(rotation, Time.time * timeScale);
-            skybox.SetFloat(exposure, Mathf.Clamp(Mathf.Sin(timeOfDay * Mathf.PI), 0.15f, 1f));
+            skybox.SetFloat(exposure, Mathf.Clamp(Mathf.Sin(timeOfDay * Mathf.PI), 0.5f, 1f));
 
             // Update sun position and intensity based on time of day
             sunlight.transform.rotation = Quaternion.Euler(new Vector3(timeOfDay * 360f - 90f, 0f, 0f));

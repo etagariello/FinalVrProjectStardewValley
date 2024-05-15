@@ -8,6 +8,7 @@ public class ToolDestroy : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        Debug.Log("Collided with " + collision.gameObject.name);
         // Check if the collision is with an object having the specified tag
         if (collision.gameObject.CompareTag(targetTag))
         {
