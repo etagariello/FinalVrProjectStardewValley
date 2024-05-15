@@ -2,9 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// Ivy; This script is attatched to each NPC, thier dialogue is then attached in the inspector
 public class CharacterDialogue : MonoBehaviour
 {
-    public GameObject dialogueActivate; // Object to activate
+    // Get the dialogue component that will be activated
+    public GameObject dialogueActivate;
 
     void Start()
     {
@@ -12,9 +14,10 @@ public class CharacterDialogue : MonoBehaviour
         dialogueActivate.SetActive(false);
     }
 
+    // Sphere radius in front of NPC
     void OnTriggerEnter(Collider other)
     {
-        // Check if the entering collider is tagged as "Player"
+        // Check if the entering collider is "Player"
         if (other.CompareTag("Player"))
         {
             // Activate the object
@@ -24,10 +27,10 @@ public class CharacterDialogue : MonoBehaviour
 
     void OnTriggerExit(Collider other)
     {
-        // Check if the exiting collider is tagged as "Player"
+        // Check if the exiting collider is "Player"
         if (other.CompareTag("Player"))
         {
-            // Deactivate the object
+            // Deactivate the object again
             dialogueActivate.SetActive(false);
         }
     }
