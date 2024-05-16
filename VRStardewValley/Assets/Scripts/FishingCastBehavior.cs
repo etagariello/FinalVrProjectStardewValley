@@ -4,7 +4,7 @@ using UnityEngine;
 using TMPro;
 
 // This script allows the player to fish.
-public class FishingCastBehavior : OVRGrabber
+public class FishingCastBehavior : MonoBehaviour
 {
     private bool FishBiteBool = false; 
     private bool FishingBool = false;
@@ -12,16 +12,20 @@ public class FishingCastBehavior : OVRGrabber
     public TextMeshProUGUI ArrowText;
     public Animator RodAnim;
     public Animator FishAnim;
-    public GameObject Player;
+    public GameObject Fish;
 
-    new void Update()
+    
+
+    void Update()
     {
-        GrabBegin();
+        if (RodAnim.GetCurrentAnimatorStateInfo(0).IsName("Idle"))
+        {
+            ResetBools();
+        }
+        Fishing();
     }
-    protected override void GrabBegin()
+    private void Fishing()
     {
-        base.GrabBegin(); // Call the base class implementation first
-
         // if they aren't already fishing
         if (FishingBool == false)
         {
@@ -37,25 +41,26 @@ public class FishingCastBehavior : OVRGrabber
         }
     }
 
-    private void OnCollisionEnter(Collision other)
+    private void OnTriggerStay(Collider other)
     {
-        if (other.transform.tag == "Water")
+        if (other.tag == "Water")
         {
             FishBite();
-            Debug.Log("calledfishbite");
         }
     }
 
-    protected void FishBite()
+    private void FishBite()
     {
-        while (FishBiteBool == false)
+        if (FishBiteBool == false)
         {
             //make a ui exclamation mark pop up
             FishBiteExclamation.enabled = true;
 
             //then if they press A again and the cast animation is being played
-            if (OVRInput.Get(OVRInput.RawButton.A) == true) //&& RodAnim.GetCurrentAnimatorStateInfo(0).IsName("Cast"))
+            if (OVRInput.Get(OVRInput.RawButton.A) == true) //&& 
             {
+                Fish.SetActive(true);
+
                 //begin the fish catching and reel in animations
                 RodAnim.Play("ReelIn");
                 FishAnim.Play("FishCaught");
@@ -67,10 +72,9 @@ public class FishingCastBehavior : OVRGrabber
             }
         }
     }
-
-    protected void ResetBools()
+    private void ResetBools()
     {
-        FishBiteBool = false;
         FishingBool = false;
+        FishBiteBool = false;
     }
 }

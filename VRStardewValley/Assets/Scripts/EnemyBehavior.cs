@@ -7,7 +7,7 @@ using TMPro;
 public class EnemyBehavior : MonoBehaviour
 {
     public TextMeshProUGUI PlayerHealthText;
-    private int PlayerHealth = 100;
+    protected int PlayerHealth;
     public Transform player;
     public Transform patrolRoute;
     public List<Transform> locations;
@@ -28,7 +28,8 @@ public class EnemyBehavior : MonoBehaviour
             MoveToNextPatrolLocation();
         }
 
-        PlayerHealthText.text = "Health: " + PlayerHealth + "/100";
+        
+
     }
 
     void InitializePatrolRoute()
@@ -59,7 +60,11 @@ public class EnemyBehavior : MonoBehaviour
     {
         if (other.transform.name == "PlayerController")
         {
+            string[] splitHealthText = PlayerHealthText.text.Split();
+            int PlayerHealth = int.Parse(splitHealthText[1]);
+
             PlayerHealth--;
+            PlayerHealthText.text = "Health: " + PlayerHealth;
 
             if (PlayerHealth <= 0)
             {

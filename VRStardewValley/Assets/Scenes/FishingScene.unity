@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 895291534}
-  m_IndirectSpecularColor: {r: 0.015935337, g: 0.024809599, b: 0.051242005, a: 1}
+  m_IndirectSpecularColor: {r: 0.01593542, g: 0.024809713, b: 0.051242247, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -555,6 +555,102 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 451538, guid: b22d7dcea44833b4ab41d64beb6e42c8, type: 3}
   m_PrefabInstance: {fileID: 19564781}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &20903866
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 20903867}
+  - component: {fileID: 20903870}
+  - component: {fileID: 20903869}
+  - component: {fileID: 20903868}
+  m_Layer: 0
+  m_Name: boat_body (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!4 &20903867
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 20903866}
+  m_LocalRotation: {x: -4.32978e-17, y: 0.7071067, z: 0.7071068, w: -4.3297806e-17}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2033562060}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &20903868
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 20903866}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300006, guid: 21e831160f0c20a4abe945f214240beb, type: 3}
+--- !u!23 &20903869
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 20903866}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 4695bd902927e834c800f82e4cd6dbca, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &20903870
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 20903866}
+  m_Mesh: {fileID: 4300006, guid: 21e831160f0c20a4abe945f214240beb, type: 3}
 --- !u!1001 &27779892
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1101,9 +1197,8 @@ GameObject:
   m_Component:
   - component: {fileID: 67727944}
   - component: {fileID: 67727947}
-  - component: {fileID: 67727946}
   - component: {fileID: 67727945}
-  - component: {fileID: 67727948}
+  - component: {fileID: 67727946}
   m_Layer: 0
   m_Name: Plane_Ocean (39)
   m_TagString: Water
@@ -1166,29 +1261,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &67727946
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 67727943}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!33 &67727947
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 67727943}
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!65 &67727948
+--- !u!65 &67727946
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1200,7 +1273,15 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 10.000002, y: 2.220446e-16, z: 10.000002}
-  m_Center: {x: 0.000015258789, y: 0, z: -0.0000019073486}
+  m_Center: {x: 0.000011444092, y: 0, z: -0.0000019073486}
+--- !u!33 &67727947
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 67727943}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &71952328
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1787,6 +1868,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: e5da93bf3ff477c4f8f88f51e419c805, type: 3}
   m_PrefabInstance: {fileID: 100476090}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &100900394
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 100000, guid: 0297c1d9dc5137043b0bde39f96ff5b2, type: 3}
+      propertyPath: m_Name
+      value: boat_1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 0297c1d9dc5137043b0bde39f96ff5b2, type: 3}
+      propertyPath: m_RootOrder
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 0297c1d9dc5137043b0bde39f96ff5b2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 62.91644
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 0297c1d9dc5137043b0bde39f96ff5b2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.337835
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 0297c1d9dc5137043b0bde39f96ff5b2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 9.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 0297c1d9dc5137043b0bde39f96ff5b2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.59033525
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 0297c1d9dc5137043b0bde39f96ff5b2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.78790957
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 0297c1d9dc5137043b0bde39f96ff5b2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.12835188
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 0297c1d9dc5137043b0bde39f96ff5b2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.11928348
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 0297c1d9dc5137043b0bde39f96ff5b2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -106.079
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 0297c1d9dc5137043b0bde39f96ff5b2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 7.5579987
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 0297c1d9dc5137043b0bde39f96ff5b2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 12.813995
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0297c1d9dc5137043b0bde39f96ff5b2, type: 3}
 --- !u!1001 &108068259
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1968,7 +2106,7 @@ Transform:
   m_LocalScale: {x: 16.238857, y: 10.559798, z: 1.4239887}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &113418454
 MonoBehaviour:
@@ -2784,7 +2922,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &140463485
 PrefabInstance:
@@ -3498,63 +3636,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 64438420d273554448959a35c747f25a, type: 3}
   m_PrefabInstance: {fileID: 184712163}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &191780988
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 191780991}
-  - component: {fileID: 191780990}
-  - component: {fileID: 191780989}
-  m_Layer: 4
-  m_Name: Post-process Volume
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &191780989
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 191780988}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!65 &191780990
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 191780988}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 72.48706, y: 29.192633, z: 106.19238}
-  m_Center: {x: 4.7208176, y: 7.6771574, z: -11.793304}
---- !u!4 &191780991
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 191780988}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.95, y: 4.721, z: 48.19}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &191847571
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4347,7 +4428,7 @@ RectTransform:
   - {fileID: 1983690560}
   - {fileID: 249391845}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 338.669, y: 180, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -6416,9 +6497,8 @@ GameObject:
   m_Component:
   - component: {fileID: 360356569}
   - component: {fileID: 360356572}
-  - component: {fileID: 360356571}
   - component: {fileID: 360356570}
-  - component: {fileID: 360356573}
+  - component: {fileID: 360356571}
   m_Layer: 0
   m_Name: Plane_Ocean (26)
   m_TagString: Water
@@ -6481,29 +6561,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &360356571
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 360356568}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!33 &360356572
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 360356568}
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!65 &360356573
+--- !u!65 &360356571
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6516,6 +6574,14 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 10.000002, y: 2.220446e-16, z: 10.000002}
   m_Center: {x: 0, y: 0, z: 0.0000076293945}
+--- !u!33 &360356572
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 360356568}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &362012344
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7016,9 +7082,8 @@ GameObject:
   m_Component:
   - component: {fileID: 375231314}
   - component: {fileID: 375231317}
-  - component: {fileID: 375231316}
   - component: {fileID: 375231315}
-  - component: {fileID: 375231318}
+  - component: {fileID: 375231316}
   m_Layer: 0
   m_Name: Plane_Ocean (30)
   m_TagString: Water
@@ -7081,29 +7146,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &375231316
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 375231313}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!33 &375231317
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 375231313}
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!65 &375231318
+--- !u!65 &375231316
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -7115,7 +7158,15 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 10.000002, y: 2.220446e-16, z: 10.000002}
-  m_Center: {x: 0.0000038146973, y: 0, z: 0.0000019073486}
+  m_Center: {x: 0.0000028014183, y: 0, z: 0.0000019073486}
+--- !u!33 &375231317
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 375231313}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &375966309
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7246,9 +7297,8 @@ GameObject:
   m_Component:
   - component: {fileID: 383528636}
   - component: {fileID: 383528639}
-  - component: {fileID: 383528638}
   - component: {fileID: 383528637}
-  - component: {fileID: 383528640}
+  - component: {fileID: 383528638}
   m_Layer: 0
   m_Name: Plane_Ocean (31)
   m_TagString: Water
@@ -7311,29 +7361,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &383528638
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 383528635}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!33 &383528639
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 383528635}
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!65 &383528640
+--- !u!65 &383528638
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -7345,7 +7373,15 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 10.000002, y: 2.220446e-16, z: 10.000002}
-  m_Center: {x: 0.00000667572, y: 0, z: 0.0000076293945}
+  m_Center: {x: 0.0000047683716, y: 0, z: 0.0000076293945}
+--- !u!33 &383528639
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 383528635}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &385125183
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7940,9 +7976,8 @@ GameObject:
   m_Component:
   - component: {fileID: 409250850}
   - component: {fileID: 409250853}
-  - component: {fileID: 409250852}
   - component: {fileID: 409250851}
-  - component: {fileID: 409250854}
+  - component: {fileID: 409250852}
   m_Layer: 0
   m_Name: Plane_Ocean (17)
   m_TagString: Water
@@ -8005,29 +8040,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &409250852
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 409250849}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!33 &409250853
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 409250849}
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!65 &409250854
+--- !u!65 &409250852
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8039,7 +8052,15 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 10.000002, y: 2.220446e-16, z: 10.000002}
-  m_Center: {x: 0.0000009536743, y: 0, z: -0.0000038146973}
+  m_Center: {x: 0, y: 0, z: -0.0000038146973}
+--- !u!33 &409250853
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 409250849}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &410523800
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9216,9 +9237,8 @@ GameObject:
   m_Component:
   - component: {fileID: 460051771}
   - component: {fileID: 460051774}
-  - component: {fileID: 460051773}
   - component: {fileID: 460051772}
-  - component: {fileID: 460051775}
+  - component: {fileID: 460051773}
   m_Layer: 0
   m_Name: Plane_Ocean (40)
   m_TagString: Water
@@ -9281,29 +9301,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &460051773
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 460051770}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!33 &460051774
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 460051770}
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!65 &460051775
+--- !u!65 &460051773
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9315,7 +9313,15 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 10.000002, y: 2.220446e-16, z: 10.000002}
-  m_Center: {x: 0.00001335144, y: 0, z: -0.00000011920929}
+  m_Center: {x: 0.000009536743, y: 0, z: -0.00000011920929}
+--- !u!33 &460051774
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 460051770}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &463553877
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9528,7 +9534,7 @@ Transform:
   - {fileID: 1341599182}
   - {fileID: 1661215503}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &465939064
 PrefabInstance:
@@ -10044,9 +10050,8 @@ GameObject:
   m_Component:
   - component: {fileID: 488617805}
   - component: {fileID: 488617808}
-  - component: {fileID: 488617807}
   - component: {fileID: 488617806}
-  - component: {fileID: 488617809}
+  - component: {fileID: 488617807}
   m_Layer: 0
   m_Name: Plane_Ocean (19)
   m_TagString: Water
@@ -10109,29 +10114,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &488617807
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 488617804}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!33 &488617808
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 488617804}
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!65 &488617809
+--- !u!65 &488617807
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10144,6 +10127,14 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 10.000002, y: 2.220446e-16, z: 10.000002}
   m_Center: {x: 0, y: 0, z: -0.0000019073486}
+--- !u!33 &488617808
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 488617804}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &489338605
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11110,9 +11101,8 @@ GameObject:
   m_Component:
   - component: {fileID: 524600650}
   - component: {fileID: 524600653}
-  - component: {fileID: 524600652}
   - component: {fileID: 524600651}
-  - component: {fileID: 524600654}
+  - component: {fileID: 524600652}
   m_Layer: 0
   m_Name: Plane_Ocean (44)
   m_TagString: Water
@@ -11175,29 +11165,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &524600652
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 524600649}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!33 &524600653
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 524600649}
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!65 &524600654
+--- !u!65 &524600652
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -11209,7 +11177,15 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 10.000002, y: 2.220446e-16, z: 10.000002}
-  m_Center: {x: 0.00000667572, y: 0, z: 0.0000076293945}
+  m_Center: {x: 0.000005722046, y: 0, z: 0.0000076293945}
+--- !u!33 &524600653
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 524600649}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &530972058
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11282,9 +11258,8 @@ GameObject:
   m_Component:
   - component: {fileID: 535842738}
   - component: {fileID: 535842741}
-  - component: {fileID: 535842740}
   - component: {fileID: 535842739}
-  - component: {fileID: 535842742}
+  - component: {fileID: 535842740}
   m_Layer: 0
   m_Name: Plane_Ocean (43)
   m_TagString: Water
@@ -11347,29 +11322,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &535842740
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 535842737}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!33 &535842741
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 535842737}
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!65 &535842742
+--- !u!65 &535842740
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -11381,7 +11334,15 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 10.000002, y: 2.220446e-16, z: 10.000002}
-  m_Center: {x: 0.00001335144, y: 0, z: 0.000009536743}
+  m_Center: {x: 0.000009536743, y: 0, z: 0.000009536743}
+--- !u!33 &535842741
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 535842737}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &539779553
 GameObject:
   m_ObjectHideFlags: 0
@@ -11415,7 +11376,7 @@ Transform:
   - {fileID: 1158262960}
   - {fileID: 722883134}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &549722371
 PrefabInstance:
@@ -11703,9 +11664,8 @@ GameObject:
   m_Component:
   - component: {fileID: 573657885}
   - component: {fileID: 573657888}
-  - component: {fileID: 573657887}
   - component: {fileID: 573657886}
-  - component: {fileID: 573657889}
+  - component: {fileID: 573657887}
   m_Layer: 0
   m_Name: Plane_Ocean (37)
   m_TagString: Water
@@ -11768,29 +11728,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &573657887
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 573657884}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!33 &573657888
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 573657884}
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!65 &573657889
+--- !u!65 &573657887
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -11802,7 +11740,15 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 10.000002, y: 2.220446e-16, z: 10.000002}
-  m_Center: {x: 0.0000076293945, y: 0, z: 0.0000076293945}
+  m_Center: {x: 0.000005722046, y: 0, z: 0.0000076293945}
+--- !u!33 &573657888
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 573657884}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &575802723
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11885,6 +11831,102 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 55fecf1063fe8474493f4866aaadffbf, type: 3}
   m_PrefabInstance: {fileID: 575802723}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &576118457
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 576118458}
+  - component: {fileID: 576118461}
+  - component: {fileID: 576118460}
+  - component: {fileID: 576118459}
+  m_Layer: 0
+  m_Name: boat_body (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!4 &576118458
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 576118457}
+  m_LocalRotation: {x: -4.32978e-17, y: 0.7071067, z: 0.7071068, w: -4.3297806e-17}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1226506354}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &576118459
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 576118457}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300006, guid: 21e831160f0c20a4abe945f214240beb, type: 3}
+--- !u!23 &576118460
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 576118457}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 4695bd902927e834c800f82e4cd6dbca, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &576118461
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 576118457}
+  m_Mesh: {fileID: 4300006, guid: 21e831160f0c20a4abe945f214240beb, type: 3}
 --- !u!1001 &578359026
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12109,9 +12151,8 @@ GameObject:
   m_Component:
   - component: {fileID: 590879922}
   - component: {fileID: 590879925}
-  - component: {fileID: 590879924}
   - component: {fileID: 590879923}
-  - component: {fileID: 590879926}
+  - component: {fileID: 590879924}
   m_Layer: 0
   m_Name: Plane_Ocean (41)
   m_TagString: Water
@@ -12174,29 +12215,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &590879924
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 590879921}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!33 &590879925
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 590879921}
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!65 &590879926
+--- !u!65 &590879924
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -12208,7 +12227,15 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 10.000002, y: 2.220446e-16, z: 10.000002}
-  m_Center: {x: 0.000015258789, y: 0, z: 0.000005722046}
+  m_Center: {x: 0.000011444092, y: 0, z: 0.000005722046}
+--- !u!33 &590879925
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 590879921}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &591402249
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12297,9 +12324,8 @@ GameObject:
   m_Component:
   - component: {fileID: 595509898}
   - component: {fileID: 595509901}
-  - component: {fileID: 595509900}
   - component: {fileID: 595509899}
-  - component: {fileID: 595509902}
+  - component: {fileID: 595509900}
   m_Layer: 0
   m_Name: Plane_Ocean (23)
   m_TagString: Water
@@ -12362,29 +12388,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &595509900
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 595509897}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!33 &595509901
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 595509897}
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!65 &595509902
+--- !u!65 &595509900
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -12396,7 +12400,15 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 10.000002, y: 2.220446e-16, z: 10.000002}
-  m_Center: {x: 0.00000667572, y: 0, z: 0.0000076293945}
+  m_Center: {x: 0.0000047683716, y: 0, z: 0.0000076293945}
+--- !u!33 &595509901
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 595509897}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &597237837
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12887,9 +12899,8 @@ GameObject:
   m_Component:
   - component: {fileID: 624217204}
   - component: {fileID: 624217207}
-  - component: {fileID: 624217206}
   - component: {fileID: 624217205}
-  - component: {fileID: 624217208}
+  - component: {fileID: 624217206}
   m_Layer: 0
   m_Name: Plane_Ocean (46)
   m_TagString: Water
@@ -12952,29 +12963,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &624217206
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 624217203}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!33 &624217207
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 624217203}
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!65 &624217208
+--- !u!65 &624217206
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -12986,7 +12975,15 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 10.000002, y: 2.220446e-16, z: 10.000002}
-  m_Center: {x: 0.00001335144, y: 0, z: 0.000011444092}
+  m_Center: {x: 0.000009536743, y: 0, z: 0.000011444092}
+--- !u!33 &624217207
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624217203}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &628240443
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13183,9 +13180,9 @@ GameObject:
   m_Component:
   - component: {fileID: 636044401}
   - component: {fileID: 636044404}
-  - component: {fileID: 636044403}
   - component: {fileID: 636044402}
   - component: {fileID: 636044405}
+  - component: {fileID: 636044403}
   m_Layer: 0
   m_Name: Plane_Ocean (22)
   m_TagString: Water
@@ -13248,8 +13245,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &636044403
-MeshCollider:
+--- !u!65 &636044403
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -13257,11 +13254,10 @@ MeshCollider:
   m_GameObject: {fileID: 636044400}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.000002, y: 2.220446e-16, z: 10.000002}
+  m_Center: {x: 0.0000047683716, y: 0, z: -0.00000011920929}
 --- !u!33 &636044404
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -13282,7 +13278,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 10.000002, y: 2.220446e-16, z: 10.000002}
-  m_Center: {x: 0.00000667572, y: 0, z: -0.00000011920929}
+  m_Center: {x: 0.0000047683716, y: 0, z: -0.00000011920929}
 --- !u!1001 &637222079
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13593,9 +13589,8 @@ GameObject:
   m_Component:
   - component: {fileID: 647773917}
   - component: {fileID: 647773920}
-  - component: {fileID: 647773919}
   - component: {fileID: 647773918}
-  - component: {fileID: 647773921}
+  - component: {fileID: 647773919}
   m_Layer: 0
   m_Name: Plane_Ocean (45)
   m_TagString: Water
@@ -13658,29 +13653,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &647773919
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 647773916}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!33 &647773920
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 647773916}
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!65 &647773921
+--- !u!65 &647773919
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -13692,7 +13665,15 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 10.000002, y: 2.220446e-16, z: 10.000002}
-  m_Center: {x: 0.0000076293945, y: 0, z: 0.000011444092}
+  m_Center: {x: 0.000005722046, y: 0, z: 0.000011444092}
+--- !u!33 &647773920
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 647773916}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &648974788
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14935,7 +14916,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Meet me at that old bait shop o'' mine and don''t forget yer rod!
+  m_text: 'Meet me at that old dock and don''t forget yer rod!
 
 
     -Willy'
@@ -15633,6 +15614,68 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 409766, guid: 38291ecd3571d294ead9e9d15c345a6d, type: 3}
   m_PrefabInstance: {fileID: 709416304}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &713393316
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 163286, guid: 827102f6dfdb671428e2504c7680aeea, type: 3}
+      propertyPath: m_Name
+      value: boat_2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 440462, guid: 827102f6dfdb671428e2504c7680aeea, type: 3}
+      propertyPath: m_RootOrder
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 440462, guid: 827102f6dfdb671428e2504c7680aeea, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 78.75213
+      objectReference: {fileID: 0}
+    - target: {fileID: 440462, guid: 827102f6dfdb671428e2504c7680aeea, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.63171
+      objectReference: {fileID: 0}
+    - target: {fileID: 440462, guid: 827102f6dfdb671428e2504c7680aeea, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 14.894604
+      objectReference: {fileID: 0}
+    - target: {fileID: 440462, guid: 827102f6dfdb671428e2504c7680aeea, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.4808968
+      objectReference: {fileID: 0}
+    - target: {fileID: 440462, guid: 827102f6dfdb671428e2504c7680aeea, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.16218185
+      objectReference: {fileID: 0}
+    - target: {fileID: 440462, guid: 827102f6dfdb671428e2504c7680aeea, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.8568255
+      objectReference: {fileID: 0}
+    - target: {fileID: 440462, guid: 827102f6dfdb671428e2504c7680aeea, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.09102508
+      objectReference: {fileID: 0}
+    - target: {fileID: 440462, guid: 827102f6dfdb671428e2504c7680aeea, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 440462, guid: 827102f6dfdb671428e2504c7680aeea, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -121.393
+      objectReference: {fileID: 0}
+    - target: {fileID: 440462, guid: 827102f6dfdb671428e2504c7680aeea, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 21.437
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 827102f6dfdb671428e2504c7680aeea, type: 3}
+--- !u!4 &713393317 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 440462, guid: 827102f6dfdb671428e2504c7680aeea, type: 3}
+  m_PrefabInstance: {fileID: 713393316}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &718030056
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15697,9 +15740,8 @@ GameObject:
   m_Component:
   - component: {fileID: 718346865}
   - component: {fileID: 718346868}
-  - component: {fileID: 718346867}
   - component: {fileID: 718346866}
-  - component: {fileID: 718346869}
+  - component: {fileID: 718346867}
   m_Layer: 0
   m_Name: Plane_Ocean (36)
   m_TagString: Water
@@ -15762,29 +15804,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &718346867
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 718346864}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!33 &718346868
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 718346864}
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!65 &718346869
+--- !u!65 &718346867
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -15796,7 +15816,15 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 10.000002, y: 2.220446e-16, z: 10.000002}
-  m_Center: {x: 0.0000076293945, y: 0, z: -0.000005722046}
+  m_Center: {x: 0.0000038146973, y: 0, z: -0.000005722046}
+--- !u!33 &718346868
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 718346864}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &722883133
 GameObject:
   m_ObjectHideFlags: 0
@@ -17069,6 +17097,102 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1253365200111565818, guid: 8109e9e16ba4cc04b8e0928aea897927, type: 3}
   m_PrefabInstance: {fileID: 789039266}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &789632865
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 789632866}
+  - component: {fileID: 789632869}
+  - component: {fileID: 789632868}
+  - component: {fileID: 789632867}
+  m_Layer: 0
+  m_Name: boat_body (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!4 &789632866
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 789632865}
+  m_LocalRotation: {x: -4.32978e-17, y: 0.7071067, z: 0.7071068, w: -4.3297806e-17}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 713393317}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &789632867
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 789632865}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300006, guid: 21e831160f0c20a4abe945f214240beb, type: 3}
+--- !u!23 &789632868
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 789632865}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 4695bd902927e834c800f82e4cd6dbca, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &789632869
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 789632865}
+  m_Mesh: {fileID: 4300006, guid: 21e831160f0c20a4abe945f214240beb, type: 3}
 --- !u!1001 &791722531
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17227,9 +17351,8 @@ GameObject:
   m_Component:
   - component: {fileID: 800755704}
   - component: {fileID: 800755707}
-  - component: {fileID: 800755706}
   - component: {fileID: 800755705}
-  - component: {fileID: 800755708}
+  - component: {fileID: 800755706}
   m_Layer: 0
   m_Name: Plane_Ocean (7)
   m_TagString: Water
@@ -17292,29 +17415,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &800755706
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 800755703}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!33 &800755707
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 800755703}
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!65 &800755708
+--- !u!65 &800755706
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -17326,7 +17427,15 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 10.000002, y: 2.220446e-16, z: 10.000002}
-  m_Center: {x: 0.0000035762787, y: 0, z: 0}
+  m_Center: {x: 0.0000025629997, y: 0, z: 0}
+--- !u!33 &800755707
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 800755703}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &804372503
 GameObject:
   m_ObjectHideFlags: 0
@@ -17337,9 +17446,8 @@ GameObject:
   m_Component:
   - component: {fileID: 804372504}
   - component: {fileID: 804372507}
-  - component: {fileID: 804372506}
   - component: {fileID: 804372505}
-  - component: {fileID: 804372508}
+  - component: {fileID: 804372506}
   m_Layer: 0
   m_Name: Plane_Ocean (20)
   m_TagString: Water
@@ -17402,29 +17510,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &804372506
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 804372503}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!33 &804372507
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 804372503}
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!65 &804372508
+--- !u!65 &804372506
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -17436,7 +17522,15 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 10.000002, y: 2.220446e-16, z: 10.000002}
-  m_Center: {x: 0.0000076293945, y: 0, z: 0.0000019073486}
+  m_Center: {x: 0.000005722046, y: 0, z: 0.0000019073486}
+--- !u!33 &804372507
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 804372503}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &805219941
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19421,6 +19515,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 451538, guid: b22d7dcea44833b4ab41d64beb6e42c8, type: 3}
   m_PrefabInstance: {fileID: 890686531}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &894498435
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 100000, guid: 0297c1d9dc5137043b0bde39f96ff5b2, type: 3}
+      propertyPath: m_Name
+      value: boat_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 0297c1d9dc5137043b0bde39f96ff5b2, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 0297c1d9dc5137043b0bde39f96ff5b2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 16.321218
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 0297c1d9dc5137043b0bde39f96ff5b2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.531042
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 0297c1d9dc5137043b0bde39f96ff5b2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 13.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 0297c1d9dc5137043b0bde39f96ff5b2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5212059
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 0297c1d9dc5137043b0bde39f96ff5b2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.5794748
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 0297c1d9dc5137043b0bde39f96ff5b2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.4189911
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 0297c1d9dc5137043b0bde39f96ff5b2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.4658324
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 0297c1d9dc5137043b0bde39f96ff5b2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -96.061
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 0297c1d9dc5137043b0bde39f96ff5b2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -77.591
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 0297c1d9dc5137043b0bde39f96ff5b2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0297c1d9dc5137043b0bde39f96ff5b2, type: 3}
 --- !u!1 &895291533
 GameObject:
   m_ObjectHideFlags: 0
@@ -19512,7 +19663,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1001 &898315078
 PrefabInstance:
@@ -20089,6 +20240,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 104517609856167801, guid: 94c015d94f6e5364e9b36b960bbe1b77, type: 3}
+      propertyPath: m_TagString
+      value: Fish
+      objectReference: {fileID: 0}
     - target: {fileID: 736482141215372739, guid: 94c015d94f6e5364e9b36b960bbe1b77, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -20137,6 +20292,10 @@ PrefabInstance:
       propertyPath: m_Convex
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7317411005216613472, guid: 94c015d94f6e5364e9b36b960bbe1b77, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94c015d94f6e5364e9b36b960bbe1b77, type: 3}
 --- !u!1 &930729355 stripped
@@ -20144,32 +20303,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 104517609856167801, guid: 94c015d94f6e5364e9b36b960bbe1b77, type: 3}
   m_PrefabInstance: {fileID: 930729354}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &930729357
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 930729355}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddadac008dabcc544908a7d0c63f9e6c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  grabBegin: 0.55
-  grabEnd: 0.35
-  m_parentHeldObject: 0
-  m_moveHandPosition: 0
-  m_gripTransform: {fileID: 0}
-  m_grabVolumes: []
-  m_controller: 0
-  m_parentTransform: {fileID: 0}
-  m_player: {fileID: 0}
-  FishBiteExclamation: {fileID: 0}
-  ArrowText: {fileID: 0}
-  RodAnim: {fileID: 0}
-  FishAnim: {fileID: 0}
-  Player: {fileID: 0}
 --- !u!54 &930729358
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -21148,9 +21281,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1002304636}
   - component: {fileID: 1002304639}
-  - component: {fileID: 1002304638}
   - component: {fileID: 1002304637}
-  - component: {fileID: 1002304640}
+  - component: {fileID: 1002304638}
   m_Layer: 0
   m_Name: Plane_Ocean (35)
   m_TagString: Water
@@ -21213,29 +21345,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &1002304638
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1002304635}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!33 &1002304639
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1002304635}
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!65 &1002304640
+--- !u!65 &1002304638
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -21247,7 +21357,15 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 10.000002, y: 2.220446e-16, z: 10.000002}
-  m_Center: {x: 0.000009536743, y: 0, z: 0.0000038146973}
+  m_Center: {x: 0.0000076293945, y: 0, z: 0.0000038146973}
+--- !u!33 &1002304639
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1002304635}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &1002524881
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22139,9 +22257,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1035585339}
   - component: {fileID: 1035585342}
-  - component: {fileID: 1035585341}
   - component: {fileID: 1035585340}
-  - component: {fileID: 1035585343}
+  - component: {fileID: 1035585341}
   m_Layer: 0
   m_Name: Plane_Ocean (16)
   m_TagString: Water
@@ -22204,29 +22321,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &1035585341
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1035585338}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!33 &1035585342
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1035585338}
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!65 &1035585343
+--- !u!65 &1035585341
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -22238,7 +22333,15 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 10.000002, y: 2.220446e-16, z: 10.000002}
-  m_Center: {x: 0.00000333786, y: 0, z: -0.0000038146973}
+  m_Center: {x: 0.0000023245811, y: 0, z: -0.0000038146973}
+--- !u!33 &1035585342
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1035585338}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &1037543966
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23321,9 +23424,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1111159354}
   - component: {fileID: 1111159357}
-  - component: {fileID: 1111159356}
   - component: {fileID: 1111159355}
-  - component: {fileID: 1111159358}
+  - component: {fileID: 1111159356}
   m_Layer: 0
   m_Name: Plane_Ocean (18)
   m_TagString: Water
@@ -23386,29 +23488,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &1111159356
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1111159353}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!33 &1111159357
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1111159353}
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!65 &1111159358
+--- !u!65 &1111159356
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -23420,7 +23500,15 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 10.000002, y: 2.220446e-16, z: 10.000002}
-  m_Center: {x: -0.0000019073486, y: 0, z: -0.0000019073486}
+  m_Center: {x: 0, y: 0, z: -0.0000019073486}
+--- !u!33 &1111159357
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1111159353}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &1111194390
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23493,9 +23581,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1116175161}
   - component: {fileID: 1116175164}
-  - component: {fileID: 1116175163}
   - component: {fileID: 1116175162}
-  - component: {fileID: 1116175165}
+  - component: {fileID: 1116175163}
   m_Layer: 0
   m_Name: Plane_Ocean (33)
   m_TagString: Water
@@ -23558,29 +23645,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &1116175163
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1116175160}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!33 &1116175164
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1116175160}
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!65 &1116175165
+--- !u!65 &1116175163
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -23592,7 +23657,15 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 10.000002, y: 2.220446e-16, z: 10.000002}
-  m_Center: {x: 0.000011444092, y: 0, z: -0.0000019073486}
+  m_Center: {x: 0.0000076293945, y: 0, z: -0.0000019073486}
+--- !u!33 &1116175164
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1116175160}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &1121337044
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25212,6 +25285,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 94.342
       objectReference: {fileID: 0}
+    - target: {fileID: 2971517357432512091, guid: f2cfc7cd690e6fe4f9678427228e5322, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4139197610404483318, guid: f2cfc7cd690e6fe4f9678427228e5322, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -25230,7 +25307,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8989529067803825723, guid: f2cfc7cd690e6fe4f9678427228e5322, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8989529067803825723, guid: f2cfc7cd690e6fe4f9678427228e5322, type: 3}
       propertyPath: m_LocalPosition.x
@@ -25296,32 +25373,6 @@ MonoBehaviour:
   m_snapOrientation: 0
   m_snapOffset: {fileID: 0}
   m_grabPoints: []
---- !u!114 &1180295315
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1180295313}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74f91d25a32c5f54ab7bded55ec4301a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  grabBegin: 0.55
-  grabEnd: 0.35
-  m_parentHeldObject: 0
-  m_moveHandPosition: 0
-  m_gripTransform: {fileID: 0}
-  m_grabVolumes: []
-  m_controller: 0
-  m_parentTransform: {fileID: 0}
-  m_player: {fileID: 0}
-  FishBiteExclamation: {fileID: 1221127669}
-  ArrowText: {fileID: 249391846}
-  RodAnim: {fileID: 1180295318}
-  FishAnim: {fileID: 1180295320}
-  Player: {fileID: 0}
 --- !u!54 &1180295316
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -25399,9 +25450,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1180295317}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e96be5abd5ce0b648b3a42a5135a5e97, type: 3}
+  m_Script: {fileID: 11500000, guid: 74f91d25a32c5f54ab7bded55ec4301a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FishBiteBool: 0
+  FishingBool: 0
+  FishBiteExclamation: {fileID: 1221127669}
+  ArrowText: {fileID: 249391846}
+  RodAnim: {fileID: 1180295318}
+  FishAnim: {fileID: 1180295320}
+  Fish: {fileID: 930729355}
 --- !u!54 &1180295322
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -25893,7 +25951,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1221127669
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25901,7 +25959,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1221127668}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
@@ -26087,7 +26145,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 462418, guid: 9f35541b213a65340a8e088b7f3ab551, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 462418, guid: 9f35541b213a65340a8e088b7f3ab551, type: 3}
       propertyPath: m_LocalScale.x
@@ -26137,6 +26195,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 6508764, guid: 9f35541b213a65340a8e088b7f3ab551, type: 3}
+      propertyPath: m_Size.y
+      value: 1.3338283
+      objectReference: {fileID: 0}
+    - target: {fileID: 6508764, guid: 9f35541b213a65340a8e088b7f3ab551, type: 3}
+      propertyPath: m_Size.z
+      value: 0.77854186
+      objectReference: {fileID: 0}
+    - target: {fileID: 6508764, guid: 9f35541b213a65340a8e088b7f3ab551, type: 3}
+      propertyPath: m_Center.y
+      value: 0.6611237
+      objectReference: {fileID: 0}
+    - target: {fileID: 6508764, guid: 9f35541b213a65340a8e088b7f3ab551, type: 3}
+      propertyPath: m_Center.z
+      value: 0.34913218
+      objectReference: {fileID: 0}
+    - target: {fileID: 6508764, guid: 9f35541b213a65340a8e088b7f3ab551, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f35541b213a65340a8e088b7f3ab551, type: 3}
 --- !u!1 &1224129677 stripped
@@ -26156,37 +26234,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54669420e5c28af458e5a6eb91450d55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  grabBegin: 0.55
-  grabEnd: 0.35
-  m_parentHeldObject: 0
-  m_moveHandPosition: 0
-  m_gripTransform: {fileID: 0}
-  m_grabVolumes: []
-  m_controller: 0
-  m_parentTransform: {fileID: 0}
-  m_player: {fileID: 0}
-  FishBiteExclamation: {fileID: 0}
+  FishBiteBool: 0
+  FishingBool: 0
+  FishBiteExclamation: {fileID: 1221127669}
   ArrowText: {fileID: 0}
-  RodAnim: {fileID: 0}
-  FishAnim: {fileID: 0}
-  Player: {fileID: 0}
+  RodAnim: {fileID: 1180295318}
+  FishAnim: {fileID: 1180295320}
+  Fish: {fileID: 930729355}
   FishCountText: {fileID: 620526235}
---- !u!54 &1224129679
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1224129677}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
+  FishCount: 0
 --- !u!1001 &1224646237
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26248,6 +26304,68 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 409766, guid: 38291ecd3571d294ead9e9d15c345a6d, type: 3}
   m_PrefabInstance: {fileID: 1224646237}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1226506353
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 163286, guid: 827102f6dfdb671428e2504c7680aeea, type: 3}
+      propertyPath: m_Name
+      value: boat_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 440462, guid: 827102f6dfdb671428e2504c7680aeea, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 440462, guid: 827102f6dfdb671428e2504c7680aeea, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 32.305397
+      objectReference: {fileID: 0}
+    - target: {fileID: 440462, guid: 827102f6dfdb671428e2504c7680aeea, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.63171
+      objectReference: {fileID: 0}
+    - target: {fileID: 440462, guid: 827102f6dfdb671428e2504c7680aeea, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 11.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 440462, guid: 827102f6dfdb671428e2504c7680aeea, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.41062352
+      objectReference: {fileID: 0}
+    - target: {fileID: 440462, guid: 827102f6dfdb671428e2504c7680aeea, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.16896026
+      objectReference: {fileID: 0}
+    - target: {fileID: 440462, guid: 827102f6dfdb671428e2504c7680aeea, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.8926364
+      objectReference: {fileID: 0}
+    - target: {fileID: 440462, guid: 827102f6dfdb671428e2504c7680aeea, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.077723764
+      objectReference: {fileID: 0}
+    - target: {fileID: 440462, guid: 827102f6dfdb671428e2504c7680aeea, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 440462, guid: 827102f6dfdb671428e2504c7680aeea, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 130.594
+      objectReference: {fileID: 0}
+    - target: {fileID: 440462, guid: 827102f6dfdb671428e2504c7680aeea, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 21.437
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 827102f6dfdb671428e2504c7680aeea, type: 3}
+--- !u!4 &1226506354 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 440462, guid: 827102f6dfdb671428e2504c7680aeea, type: 3}
+  m_PrefabInstance: {fileID: 1226506353}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1231539692
 PrefabInstance:
@@ -29130,9 +29248,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1391192432}
   - component: {fileID: 1391192435}
-  - component: {fileID: 1391192434}
   - component: {fileID: 1391192433}
-  - component: {fileID: 1391192436}
+  - component: {fileID: 1391192434}
   m_Layer: 0
   m_Name: Plane_Ocean (38)
   m_TagString: Water
@@ -29195,29 +29312,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &1391192434
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1391192431}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!33 &1391192435
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1391192431}
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!65 &1391192436
+--- !u!65 &1391192434
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -29229,7 +29324,15 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 10.000002, y: 2.220446e-16, z: 10.000002}
-  m_Center: {x: 0.000011444092, y: 0, z: 0.000002861023}
+  m_Center: {x: 0.0000076293945, y: 0, z: 0.000002861023}
+--- !u!33 &1391192435
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1391192431}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &1397597749
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30304,6 +30407,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1253365200111565818, guid: 8109e9e16ba4cc04b8e0928aea897927, type: 3}
   m_PrefabInstance: {fileID: 1447080400}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1453487955
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 157228, guid: 1bf9bc82a9760b2488a711e79d36551e, type: 3}
+      propertyPath: m_Name
+      value: fireplace
+      objectReference: {fileID: 0}
+    - target: {fileID: 455408, guid: 1bf9bc82a9760b2488a711e79d36551e, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 455408, guid: 1bf9bc82a9760b2488a711e79d36551e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 43
+      objectReference: {fileID: 0}
+    - target: {fileID: 455408, guid: 1bf9bc82a9760b2488a711e79d36551e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.8387947
+      objectReference: {fileID: 0}
+    - target: {fileID: 455408, guid: 1bf9bc82a9760b2488a711e79d36551e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 17.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 455408, guid: 1bf9bc82a9760b2488a711e79d36551e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 455408, guid: 1bf9bc82a9760b2488a711e79d36551e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -4.32978e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 455408, guid: 1bf9bc82a9760b2488a711e79d36551e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: 455408, guid: 1bf9bc82a9760b2488a711e79d36551e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 455408, guid: 1bf9bc82a9760b2488a711e79d36551e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 455408, guid: 1bf9bc82a9760b2488a711e79d36551e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 455408, guid: 1bf9bc82a9760b2488a711e79d36551e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1bf9bc82a9760b2488a711e79d36551e, type: 3}
 --- !u!1001 &1453566225
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30586,7 +30746,7 @@ RectTransform:
   - {fileID: 1007693350}
   - {fileID: 668140403}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 338.669, y: 180, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -31302,7 +31462,7 @@ Transform:
   - {fileID: 647773917}
   - {fileID: 624217204}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1506597190
 PrefabInstance:
@@ -31532,9 +31692,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1520236836}
   - component: {fileID: 1520236839}
-  - component: {fileID: 1520236838}
   - component: {fileID: 1520236837}
-  - component: {fileID: 1520236840}
+  - component: {fileID: 1520236838}
   m_Layer: 0
   m_Name: Plane_Ocean (4)
   m_TagString: Water
@@ -31597,29 +31756,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &1520236838
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1520236835}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!33 &1520236839
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1520236835}
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!65 &1520236840
+--- !u!65 &1520236838
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -31631,7 +31768,15 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 10.000002, y: 2.220446e-16, z: 10.000002}
-  m_Center: {x: 0.000003874302, y: 0, z: -0.0000019073486}
+  m_Center: {x: 0.0000029206276, y: 0, z: -0.0000019073486}
+--- !u!33 &1520236839
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1520236835}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &1521445883
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31926,9 +32071,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1545681573}
   - component: {fileID: 1545681576}
-  - component: {fileID: 1545681575}
   - component: {fileID: 1545681574}
-  - component: {fileID: 1545681577}
+  - component: {fileID: 1545681575}
   m_Layer: 0
   m_Name: Plane_Ocean (21)
   m_TagString: Water
@@ -31991,29 +32135,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &1545681575
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1545681572}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!33 &1545681576
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1545681572}
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!65 &1545681577
+--- !u!65 &1545681575
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -32025,7 +32147,15 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 10.000002, y: 2.220446e-16, z: 10.000002}
-  m_Center: {x: 0.000005722046, y: 0, z: -0.000002861023}
+  m_Center: {x: 0.0000038146973, y: 0, z: -0.000002861023}
+--- !u!33 &1545681576
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1545681572}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &1546283738
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32609,7 +32739,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1569924478
 PrefabInstance:
@@ -33669,9 +33799,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1650522670}
   - component: {fileID: 1650522673}
-  - component: {fileID: 1650522672}
   - component: {fileID: 1650522671}
-  - component: {fileID: 1650522674}
+  - component: {fileID: 1650522672}
   m_Layer: 0
   m_Name: Plane_Ocean (34)
   m_TagString: Water
@@ -33734,29 +33863,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &1650522672
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1650522669}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!33 &1650522673
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1650522669}
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!65 &1650522674
+--- !u!65 &1650522672
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -33768,7 +33875,15 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 10.000002, y: 2.220446e-16, z: 10.000002}
-  m_Center: {x: 0.000009536743, y: 0, z: -0.00000011920929}
+  m_Center: {x: 0.000005722046, y: 0, z: -0.00000011920929}
+--- !u!33 &1650522673
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1650522669}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &1651203676
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35031,9 +35146,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1686557729}
   - component: {fileID: 1686557732}
-  - component: {fileID: 1686557731}
   - component: {fileID: 1686557730}
-  - component: {fileID: 1686557733}
+  - component: {fileID: 1686557731}
   m_Layer: 0
   m_Name: Plane_Ocean (32)
   m_TagString: Water
@@ -35096,29 +35210,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &1686557731
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1686557728}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!33 &1686557732
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1686557728}
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!65 &1686557733
+--- !u!65 &1686557731
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -35130,7 +35222,15 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 10.000002, y: 2.220446e-16, z: 10.000002}
-  m_Center: {x: 0.0000076293945, y: 0, z: 0.000002861023}
+  m_Center: {x: 0.0000038146973, y: 0, z: 0.000002861023}
+--- !u!33 &1686557732
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1686557728}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &1686621178
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35203,9 +35303,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1688877943}
   - component: {fileID: 1688877946}
-  - component: {fileID: 1688877945}
   - component: {fileID: 1688877944}
-  - component: {fileID: 1688877947}
+  - component: {fileID: 1688877945}
   m_Layer: 0
   m_Name: Plane_Ocean (27)
   m_TagString: Water
@@ -35268,29 +35367,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &1688877945
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1688877942}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!33 &1688877946
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1688877942}
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!65 &1688877947
+--- !u!65 &1688877945
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -35303,6 +35380,14 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 10.000002, y: 2.220446e-16, z: 10.000002}
   m_Center: {x: -0.0000038146973, y: 0, z: 0.0000076293945}
+--- !u!33 &1688877946
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1688877942}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &1693181754
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36872,9 +36957,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1747523385}
   - component: {fileID: 1747523388}
-  - component: {fileID: 1747523387}
   - component: {fileID: 1747523386}
-  - component: {fileID: 1747523389}
+  - component: {fileID: 1747523387}
   m_Layer: 0
   m_Name: Plane_Ocean (29)
   m_TagString: Water
@@ -36937,29 +37021,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &1747523387
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1747523384}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!33 &1747523388
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1747523384}
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!65 &1747523389
+--- !u!65 &1747523387
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -36971,7 +37033,15 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 10.000002, y: 2.220446e-16, z: 10.000002}
-  m_Center: {x: 0.0000032782555, y: 0, z: 0.000002861023}
+  m_Center: {x: 0.0000022649765, y: 0, z: 0.000002861023}
+--- !u!33 &1747523388
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1747523384}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &1750956454
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38039,9 +38109,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1805439319}
   - component: {fileID: 1805439322}
-  - component: {fileID: 1805439321}
   - component: {fileID: 1805439320}
-  - component: {fileID: 1805439323}
+  - component: {fileID: 1805439321}
   m_Layer: 0
   m_Name: Plane_Ocean (42)
   m_TagString: Water
@@ -38104,29 +38173,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &1805439321
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1805439318}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!33 &1805439322
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1805439318}
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!65 &1805439323
+--- !u!65 &1805439321
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -38138,7 +38185,15 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 10.000002, y: 2.220446e-16, z: 10.000002}
-  m_Center: {x: 0.000011444092, y: 0, z: -0.0000038146973}
+  m_Center: {x: 0.0000076293945, y: 0, z: -0.0000038146973}
+--- !u!33 &1805439322
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1805439318}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &1806281016
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38273,9 +38328,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1812174949}
   - component: {fileID: 1812174952}
-  - component: {fileID: 1812174951}
   - component: {fileID: 1812174950}
-  - component: {fileID: 1812174953}
+  - component: {fileID: 1812174951}
   m_Layer: 0
   m_Name: Plane_Ocean (24)
   m_TagString: Water
@@ -38338,29 +38392,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &1812174951
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1812174948}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!33 &1812174952
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1812174948}
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!65 &1812174953
+--- !u!65 &1812174951
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -38372,7 +38404,15 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 10.000002, y: 2.220446e-16, z: 10.000002}
-  m_Center: {x: 0.0000076293945, y: 0, z: -0.0000019073486}
+  m_Center: {x: 0.000005722046, y: 0, z: -0.0000019073486}
+--- !u!33 &1812174952
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1812174948}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &1818677863
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -40774,7 +40814,7 @@ RectTransform:
   - {fileID: 117069793}
   - {fileID: 620526234}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: -7.486, y: 180, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -41794,7 +41834,7 @@ Transform:
   - {fileID: 890686532}
   - {fileID: 805219942}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1991804701
 PrefabInstance:
@@ -42587,6 +42627,68 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 455934, guid: 2ed7cc7e3c944414d8f3fabb4d533018, type: 3}
   m_PrefabInstance: {fileID: 2033312086}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2033562059
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 163286, guid: 827102f6dfdb671428e2504c7680aeea, type: 3}
+      propertyPath: m_Name
+      value: boat_2 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 440462, guid: 827102f6dfdb671428e2504c7680aeea, type: 3}
+      propertyPath: m_RootOrder
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 440462, guid: 827102f6dfdb671428e2504c7680aeea, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 49.231174
+      objectReference: {fileID: 0}
+    - target: {fileID: 440462, guid: 827102f6dfdb671428e2504c7680aeea, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.63171
+      objectReference: {fileID: 0}
+    - target: {fileID: 440462, guid: 827102f6dfdb671428e2504c7680aeea, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 10.471816
+      objectReference: {fileID: 0}
+    - target: {fileID: 440462, guid: 827102f6dfdb671428e2504c7680aeea, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9092248
+      objectReference: {fileID: 0}
+    - target: {fileID: 440462, guid: 827102f6dfdb671428e2504c7680aeea, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.07049875
+      objectReference: {fileID: 0}
+    - target: {fileID: 440462, guid: 827102f6dfdb671428e2504c7680aeea, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.3724537
+      objectReference: {fileID: 0}
+    - target: {fileID: 440462, guid: 827102f6dfdb671428e2504c7680aeea, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.1721
+      objectReference: {fileID: 0}
+    - target: {fileID: 440462, guid: 827102f6dfdb671428e2504c7680aeea, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 440462, guid: 827102f6dfdb671428e2504c7680aeea, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 44.552
+      objectReference: {fileID: 0}
+    - target: {fileID: 440462, guid: 827102f6dfdb671428e2504c7680aeea, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 21.437
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 827102f6dfdb671428e2504c7680aeea, type: 3}
+--- !u!4 &2033562060 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 440462, guid: 827102f6dfdb671428e2504c7680aeea, type: 3}
+  m_PrefabInstance: {fileID: 2033562059}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2044717173
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -42791,9 +42893,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2052040637}
   - component: {fileID: 2052040640}
-  - component: {fileID: 2052040639}
   - component: {fileID: 2052040638}
-  - component: {fileID: 2052040641}
+  - component: {fileID: 2052040639}
   m_Layer: 0
   m_Name: Plane_Ocean (25)
   m_TagString: Water
@@ -42856,29 +42957,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &2052040639
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2052040636}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!33 &2052040640
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2052040636}
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!65 &2052040641
+--- !u!65 &2052040639
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -42890,7 +42969,15 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 10.000002, y: 2.220446e-16, z: 10.000002}
-  m_Center: {x: 0.000003516674, y: 0, z: 0.000009536743}
+  m_Center: {x: 0.000002503395, y: 0, z: 0.000009536743}
+--- !u!33 &2052040640
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2052040636}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &2053178182
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -42987,9 +43074,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2053396529}
   - component: {fileID: 2053396532}
-  - component: {fileID: 2053396531}
   - component: {fileID: 2053396530}
-  - component: {fileID: 2053396533}
+  - component: {fileID: 2053396531}
   m_Layer: 0
   m_Name: Plane_Ocean (28)
   m_TagString: Water
@@ -43052,29 +43138,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &2053396531
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2053396528}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!33 &2053396532
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2053396528}
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!65 &2053396533
+--- !u!65 &2053396531
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -43087,6 +43151,14 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 10.000002, y: 2.220446e-16, z: 10.000002}
   m_Center: {x: -0.000005722046, y: 0, z: 0.000009536743}
+--- !u!33 &2053396532
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2053396528}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &2061949842
 PrefabInstance:
   m_ObjectHideFlags: 0

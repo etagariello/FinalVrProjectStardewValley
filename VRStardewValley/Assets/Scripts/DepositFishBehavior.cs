@@ -8,23 +8,24 @@ using TMPro;
 public class DepositFishBehavior : FishingCastBehavior
 {
     public TextMeshProUGUI FishCountText;
-    private int FishCount = 0;
+    public int FishCount = 0;
 
     private void OnTriggerEnter(Collider other)
     {
         //if the object that collided has the tag Fish
         if (other.transform.tag == "Fish")
         {
+            Fish.SetActive(false);
+
             //reset the fish animation back to normal
             FishAnim.Play("Idle");
             RodAnim.Play("Idle");
 
-            //reset the bools by calling the method from the parent class
-            ResetBools();
+            FishCount++;
         }
     }
 
-    new private void Update()
+    private void Update()
     {
         // change the fish count text to the new amount every frame
         FishCountText.text = "Amount of Fish: " + FishCount;
