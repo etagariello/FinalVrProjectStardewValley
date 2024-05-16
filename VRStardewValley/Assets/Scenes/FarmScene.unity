@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.023871293, g: 0.019289821, b: 0.027491022, a: 1}
+  m_IndirectSpecularColor: {r: 0.046074435, g: 0.037243202, b: 0.052953076, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -326,7 +326,6 @@ MonoBehaviour:
   targetTag: CarrotPlant
   plant: {fileID: 992031901}
   ghostPlant: {fileID: 14616467}
-  grownPlant: {fileID: 825459981}
 --- !u!135 &14616469
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1082,6 +1081,22 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &108410606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 108410603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae47dc9f54d177c42982c57cdea18712, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ghostPlant: {fileID: 467824159}
+  plant: {fileID: 108410603}
+  grownPlant: {fileID: 1685856063}
+  growthTime: 10
 --- !u!1001 &112954480
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2076,6 +2091,22 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &205786283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 205786280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae47dc9f54d177c42982c57cdea18712, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ghostPlant: {fileID: 1981694375}
+  plant: {fileID: 205786280}
+  grownPlant: {fileID: 595333870}
+  growthTime: 10
 --- !u!1 &246838272 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6739804228592001243, guid: 6cdd667aa0034cd4dadc8d58a65fb098, type: 3}
@@ -3843,7 +3874,6 @@ MonoBehaviour:
   targetTag: TurnipPlant
   plant: {fileID: 108410603}
   ghostPlant: {fileID: 467824159}
-  grownPlant: {fileID: 1685856063}
 --- !u!135 &467824161
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4873,7 +4903,6 @@ MonoBehaviour:
   targetTag: TomatoPlant
   plant: {fileID: 2102716544}
   ghostPlant: {fileID: 555697238}
-  grownPlant: {fileID: 136755295}
 --- !u!135 &555697240
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -5725,7 +5754,6 @@ MonoBehaviour:
   targetTag: TomatoPlant
   plant: {fileID: 1040336392}
   ghostPlant: {fileID: 680513431}
-  grownPlant: {fileID: 1041672797}
 --- !u!135 &680513433
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -8503,6 +8531,22 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &992031904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 992031901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae47dc9f54d177c42982c57cdea18712, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ghostPlant: {fileID: 14616467}
+  plant: {fileID: 992031901}
+  grownPlant: {fileID: 825459981}
+  growthTime: 10
 --- !u!1001 &992765610
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8996,7 +9040,6 @@ MonoBehaviour:
   targetTag: CarrotPlant
   plant: {fileID: 1695636924}
   ghostPlant: {fileID: 1030266177}
-  grownPlant: {fileID: 193974052}
 --- !u!135 &1030266179
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -9223,6 +9266,22 @@ MonoBehaviour:
   m_snapOrientation: 0
   m_snapOffset: {fileID: 0}
   m_grabPoints: []
+--- !u!114 &1040336395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1040336392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae47dc9f54d177c42982c57cdea18712, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ghostPlant: {fileID: 680513431}
+  plant: {fileID: 1040336392}
+  grownPlant: {fileID: 1041672797}
+  growthTime: 10
 --- !u!1001 &1041672795
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12015,7 +12074,6 @@ MonoBehaviour:
   targetTag: TomatoPlant
   plant: {fileID: 2136311908}
   ghostPlant: {fileID: 1429623946}
-  grownPlant: {fileID: 968813076}
 --- !u!135 &1429623948
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -12742,6 +12800,22 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1475662245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1475662242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae47dc9f54d177c42982c57cdea18712, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ghostPlant: {fileID: 1485611581}
+  plant: {fileID: 1475662242}
+  grownPlant: {fileID: 1094280341}
+  growthTime: 10
 --- !u!1 &1475763628
 GameObject:
   m_ObjectHideFlags: 0
@@ -12878,7 +12952,6 @@ MonoBehaviour:
   targetTag: CarrotPlant
   plant: {fileID: 1475662242}
   ghostPlant: {fileID: 1485611581}
-  grownPlant: {fileID: 1094280341}
 --- !u!135 &1485611583
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -14909,7 +14982,6 @@ MonoBehaviour:
   targetTag: TurnipPlant
   plant: {fileID: 1726232691}
   ghostPlant: {fileID: 1637476522}
-  grownPlant: {fileID: 200420797}
 --- !u!135 &1637476524
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -15771,6 +15843,22 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1695636927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1695636924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae47dc9f54d177c42982c57cdea18712, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ghostPlant: {fileID: 1030266177}
+  plant: {fileID: 1695636924}
+  grownPlant: {fileID: 193974052}
+  growthTime: 10
 --- !u!1001 &1713851883
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16019,6 +16107,22 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1726232694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1726232691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae47dc9f54d177c42982c57cdea18712, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ghostPlant: {fileID: 1637476522}
+  plant: {fileID: 1726232691}
+  grownPlant: {fileID: 200420797}
+  growthTime: 10
 --- !u!1001 &1735065088
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18329,7 +18433,6 @@ MonoBehaviour:
   targetTag: TurnipPlant
   plant: {fileID: 205786280}
   ghostPlant: {fileID: 1981694375}
-  grownPlant: {fileID: 595333870}
 --- !u!135 &1981694377
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -19368,6 +19471,22 @@ MonoBehaviour:
   m_snapOrientation: 0
   m_snapOffset: {fileID: 0}
   m_grabPoints: []
+--- !u!114 &2102716547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2102716544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae47dc9f54d177c42982c57cdea18712, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ghostPlant: {fileID: 555697238}
+  plant: {fileID: 2102716544}
+  grownPlant: {fileID: 136755295}
+  growthTime: 10
 --- !u!1001 &2105869662
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19570,6 +19689,22 @@ MonoBehaviour:
   m_snapOrientation: 0
   m_snapOffset: {fileID: 0}
   m_grabPoints: []
+--- !u!114 &2136311911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2136311908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae47dc9f54d177c42982c57cdea18712, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ghostPlant: {fileID: 1429623946}
+  plant: {fileID: 2136311908}
+  grownPlant: {fileID: 968813076}
+  growthTime: 10
 --- !u!1001 &2137585246
 PrefabInstance:
   m_ObjectHideFlags: 0
