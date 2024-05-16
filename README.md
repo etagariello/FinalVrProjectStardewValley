@@ -7,6 +7,7 @@ Elias Tagariello Contributions: Main Menu Cave Scene Fishing Scene
 Ivy Bowers Contributions: House Scene Farm Scene End Scene
 
 Live Demo: https://youtu.be/MvOa4IDBVT8
+
 Game Trailer: https://youtube.com/shorts/9rti8YITWo8
 
 Resources: 
