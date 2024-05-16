@@ -25507,7 +25507,7 @@ MonoBehaviour:
   ArrowText: {fileID: 249391846}
   RodAnim: {fileID: 1180295318}
   FishAnim: {fileID: 1180295320}
-  Fish: {fileID: 0}
+  Fish: {fileID: 930729355}
 --- !u!54 &1180295322
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -26286,7 +26286,7 @@ MonoBehaviour:
   ArrowText: {fileID: 0}
   RodAnim: {fileID: 1180295318}
   FishAnim: {fileID: 1180295320}
-  Fish: {fileID: 0}
+  Fish: {fileID: 930729355}
   FishCountText: {fileID: 620526235}
   FishCount: 0
 --- !u!54 &1224129679
