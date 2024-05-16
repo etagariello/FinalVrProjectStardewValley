@@ -13,7 +13,7 @@ public class ToolDestroy : MonoBehaviour
     {
         Debug.Log("Collided with " + collision.gameObject.name);
         // Check if the collision is with the correct tagged object: Tree, Rock, or Grass assigned/dragged in inspector
-        if (collision.gameObject.CompareTag(targetTag))
+        if (collision.gameObject.tag == targetTag)
         {
             // Destroy the target object (Tree, Rock, or Grass)
             Destroy(collision.gameObject);

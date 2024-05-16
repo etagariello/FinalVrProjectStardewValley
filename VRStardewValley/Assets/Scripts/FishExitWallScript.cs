@@ -9,7 +9,7 @@ public class FishExitWallScript : MonoBehaviour
     {
         if (collision.gameObject.name == "PlayerController")
         {
-            SceneManager.LoadScene("CaveScene");
+            SceneManager.LoadScene("FarmScene");
         }
     }
 }

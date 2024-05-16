@@ -80,7 +80,7 @@ public class PlantingScript : MonoBehaviour
     {
         Debug.Log("Collided with " + collision.gameObject.name);
         // Check if the collision is with the correct tagged object: Carrot, Tomato, or Turnip assigned/dragged in inspector
-        if (collision.gameObject.CompareTag(targetTag))
+        if (collision.gameObject.tag == targetTag)
         {
             // Set isPlanted to true
             isPlanted = true;

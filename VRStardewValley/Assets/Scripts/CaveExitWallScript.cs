@@ -9,7 +9,7 @@ public class CaveExitWallScript : MonoBehaviour
     {
         if (collision.gameObject.name == "PlayerController")
         {
-            SceneManager.LoadScene("MainMenu");
+            SceneManager.LoadScene("FarmScene");
         }
     }
 }

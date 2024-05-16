@@ -17,7 +17,7 @@ public class SowSoil : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         // Check if the collision is with an object having the specified tag
-        if (collision.gameObject.CompareTag("Dirt"))
+        if (collision.transform.tag == "Dirt")
         {
             // Show the the sowed soil
             soil.SetActive(true);
