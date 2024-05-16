@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-// Ivy; attached to fish
+// Ivy; attached to corn for cow
 public class FeedTreat : MonoBehaviour
 {
 
@@ -12,7 +12,7 @@ public class FeedTreat : MonoBehaviour
         // Check if the colliding object is the cow
         if (collision.gameObject.CompareTag("Cow"))
         {
-            // Make the treat disappear
+            // Make the corn/treat disappear
             gameObject.SetActive(false);
         }
     }

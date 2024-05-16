@@ -2,8 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// Ivy; This script handles the hoe colliding with the soil to plow it
 public class SowSoil : MonoBehaviour
 {
+    // Set the objects for soil in inspector
     public GameObject soil;
 
     void Start()

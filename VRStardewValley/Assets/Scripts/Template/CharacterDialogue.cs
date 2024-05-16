@@ -10,7 +10,7 @@ public class CharacterDialogue : MonoBehaviour
 
     void Start()
     {
-        // Deactivate the object initially
+        // Deactivate the dialogue initially
         dialogueActivate.SetActive(false);
     }
 
@@ -20,7 +20,7 @@ public class CharacterDialogue : MonoBehaviour
         // Check if the entering collider is "Player"
         if (other.CompareTag("Player"))
         {
-            // Activate the object
+            // Activate the dialogue
             dialogueActivate.SetActive(true);
         }
     }
@@ -30,7 +30,7 @@ public class CharacterDialogue : MonoBehaviour
         // Check if the exiting collider is "Player"
         if (other.CompareTag("Player"))
         {
-            // Deactivate the object again
+            // Deactivate the dialogue again
             dialogueActivate.SetActive(false);
         }
     }

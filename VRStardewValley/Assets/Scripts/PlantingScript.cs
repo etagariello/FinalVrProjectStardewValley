@@ -9,54 +9,93 @@ using UnityEngine;
 using UnityEngine.UIElements;
 using TMPro;
 
+// Ivy; This script handles planting crops in their specific planting spots similar to rock stacking with snap positioning, creating a timer once its planted,
+// and grow the plant after some time. You can only plant carrots, tomatoes, and turnips in their specified rows. (example plant on the right side of all rows) 
 public class PlantingScript : MonoBehaviour
 {
-    // target tag
+    // Target tag
     public string targetTag;
-    // plant gameobject
+    // Plant gameobject
     public GameObject plant;
-    // ghost plant gameobject
+    // Ghost plant gameobject
     public GameObject ghostPlant;
-    // plant position    
+    // Gameobject representing the plant fully grown
+    public GameObject grownPlant;
+
+    // Plant position    
     private Transform plantPosition;
-    // ghost plant position
+    // Ghost plant position
     private Transform ghostPlantPosition;
-    // plant rigidbodie    
+    // Plant rigidbody  
     private Rigidbody plantRigidbody;
-    // plant grabbable script    
+    // Plant grabbable script    
     private OVRGrabbable plantGrabbable;
+    // GrownPlant grabbable
+    private OVRGrabbable grownPlantGrabbable;
+
+    // isPlanted boolean
+    private bool isPlanted;
+    // A timer float
+    private float timer;
+    // A time to grow float, set at 10 seconds
+    private float growthTime = 10f;
+    
     
     private void Start() { 
-        // plant positions        
+        // Plant positions        
         plantPosition = plant.transform;
-        // ghost plant positions        
+        // Ghost plant positions        
         ghostPlantPosition = ghostPlant.transform;
-        // plant rigidbodies        
+        // Plant rigidbodies        
         plantRigidbody = plant.GetComponent<Rigidbody>();
-        // plant grabbable scripts        
-        plantGrabbable = plant.GetComponent<OVRGrabbable>(); 
+        // Plant grabbable script        
+        plantGrabbable = plant.GetComponent<OVRGrabbable>();
+        // Set isPlanted to false on start 
+        isPlanted = false;
+        // GrownPlant grabbable
+        grownPlantGrabbable = grownPlant.GetComponent<OVRGrabbable>();
         }
     
+    private void Update() {
+        // Checks each frame if isPlanted is true
+        if (isPlanted) {
+            // If isPlanted, timer begins to increase every second
+            timer += Time.deltaTime;
+            Debug.Log("Timer: " + timer);
+            if (timer >= growthTime)
+            {
+                // If timer gets to the set growthTime, display the grown plant
+                grownPlant.SetActive(true);
+                // Hide the initial plant
+                plant.SetActive(false);
+                // Reset timer
+                timer = 0;
+                // Reset isPlanted
+                isPlanted = false;
+            }
+        }
+    }
+
     private void OnCollisionEnter(Collision collision)
     {
         Debug.Log("Collided with " + collision.gameObject.name);
         // Check if the collision is with the correct tagged object: Carrot, Tomato, or Turnip assigned/dragged in inspector
         if (collision.gameObject.CompareTag(targetTag))
         {
-            Debug.Log("Correct object tagged as: " + targetTag);
+            // Set isPlanted to true
+            isPlanted = true;
+
+            // Disable the ghostPlant
             ghostPlant.SetActive(false);
 
-            // destroy the rigidbody so it no longer can move
+            // Destroy the rigidbody so it no longer can move
             Destroy(plantRigidbody);
 
-            // destroy the grabbable script so that it can no longer be grabbed once placed
+            // Destroy the grabbable script so that it can no longer be grabbed once placed
             Destroy(plantGrabbable);
 
-            // moves the plant that collided to the location of the ghost plant
+            // Moves the plant that collided to the location of the ghost plant
             plantPosition.position = ghostPlantPosition.position;
-        }
-        else {
-        Debug.Log("Incorrect object tagged as: " + collision.gameObject.tag);
         }
     }
 }
