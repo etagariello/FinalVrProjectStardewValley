@@ -11,9 +11,14 @@ Game Trailer: https://youtube.com/shorts/9rti8YITWo8
 
 Resources: 
 Collisions - https://www.occasoftware.com/blog/collider-interactions-in-unity, Learning C# by Developing Games with Unity 2020
+
 SetActive - https://docs.unity3d.com/2020.3/Documentation/ScriptReference/GameObject-activeSelf.html, https://docs.unity3d.com/2020.3/Documentation/ScriptReference/GameObject.SetActive.html
+
 CompareTag - https://docs.unity3d.com/ScriptReference/Component.CompareTag.html
+
 LoadScene - https://docs.unity3d.com/2020.3/Documentation/ScriptReference/SceneManagement.SceneManager.LoadScene.html
+
 Parent & Child Objects - https://www.tutorialspoint.com/unity/unity_transforms_and_object_parenting.htm#:~:text=GameObjects%20can%20be%20parented%20simply,next%20to%20the%20parent%20object, 
 https://docs.unity3d.com/ScriptReference/Transform.html, https://docs.unity3d.com/ScriptReference/Transform-position.html
+
 Destroy - https://docs.unity3d.com/ScriptReference/Object.Destroy.html
